@@ -16,6 +16,6 @@
     "noImplicitReturns": true,
     "isolatedModules": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "stores/models", "stores/resultStore.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "stores/models"],
   "exclude": ["node_modules"]
 }

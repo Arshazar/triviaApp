@@ -29,7 +29,7 @@ export const resultStore = types
       return `${Math.round((corrects + Number.EPSILON) * 100) / 10}`
     }
   }))
-  .actions((self) => ({
+  .actions((self: { answers: Answer[] }) => ({
     setAnswer: (data: Answer) => {
       const answers = toJS(self.answers)
       if (answers.length > 0) {
@@ -41,7 +41,7 @@ export const resultStore = types
       }
       self.answers = [...answers, { number: data.number, text: data.text }]
     },
-    setAnswers: (data: Answer[] | []) => {
+    setAnswers: (data: any) => {
       self.answers = data
     },
     getAnswer: (n: number) => {
