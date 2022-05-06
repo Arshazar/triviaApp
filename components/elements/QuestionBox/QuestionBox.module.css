@@ -1,0 +1,12 @@
+.correct {
+  border-color: var(--success-color);
+}
+.correct:hover {
+  border-color: var(--success-color-hover);
+}
+.incorrect {
+  border-color: var(--error-color);
+}
+.incorrect:hover {
+  border-color: var(--error-color-hover);
+}

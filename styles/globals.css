@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './reset.css';
+@import './normalize.css';
+@import './variables.css';
+@import './public.css';
