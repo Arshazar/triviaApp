@@ -15,7 +15,7 @@ export const questionsStore = types
     }
   }))
   .actions((self) => ({
-    setQuestions: (data: Question[] | []) => {
+    setQuestions: (data: any) => {
       self.questions = data
     },
     fetch: flow(function* () {
